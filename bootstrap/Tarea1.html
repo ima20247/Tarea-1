@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            display: grid;
+            gap: 7px;
+            padding: 7px;
+            height: 100vh;
+        }
+
+        .nombre {
+            width: 100%;
+            height: 60;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+        }
+
+        .name {
+            font-size: 17px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .NrLista {
+            background: rgb(104, 104, 104);
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .nav-bar {
+            height: 60px;
+            background: rgb(48, 2, 90);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .nav-item a {
+            color: white;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 7px;
+        }
+
+        .card {
+            background: black;
+            color: white;
+        }
+
+        .contenido {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 7px;
+        }
+
+        .imagenes {
+            display: grid;
+            gap: 5px;
+        }
+
+        img {
+            width: 100%;
+            height: 100px;
+            border-radius: 7px;
+        }
+
+        .list-group-item {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            height: 50px;
+            padding-top:13px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="nombre">
+        <div class="name">Imanol Yamir Santa Maria Mamani</div>
+        <div class="NrLista">Nr: 131</div>
+    </div>
+
+    <div class="nav-bar">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Active</a>
+              </li>
+          </ul>
+    </div> 
+    <div class="cards">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contenido">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+        </div>
+
+        <div class="imagenes">
+            <div class="imagen">
+                <img src="fondo3.jpg">
+            </div>
+
+            <div class="imagen">
+                <img src="fondo3.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">2</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
